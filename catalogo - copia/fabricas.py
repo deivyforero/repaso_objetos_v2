@@ -1,4 +1,4 @@
-from producto import *
+from productos import *
 
 
 class Fabrica2:
