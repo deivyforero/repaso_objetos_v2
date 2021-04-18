@@ -2,19 +2,19 @@ class Producto:
     def __init__(self):
         self.imagen = ""
         self.descripcion = ""
-        self.grupo = ""
+        self.grupo = "" 
 
 class Arma(Producto):
     def __init__(self):
         Producto.__init__(self)
 
-class ArmaHumanos(Arma):
+class ArmaHumanos(Producto):
     def __init__(self):
         self.grupo = "Humanos"
         self.imagen = "static/imagenes/humanos/arma.png"
         self.descripcion = "arma del humano"
 
-class ArmaOrcos(Arma):
+class ArmaOrcos(Producto):
     def __init__(self):
         self.grupo = "Orcos"
         self.imagen = "static/imagenes/orcos/arma.png"
@@ -24,13 +24,13 @@ class Escudo(Producto):
     def __init__(self):
         Producto.__init__(self)
 
-class EscudoHumanos(Escudo):
+class EscudoHumanos(Producto):
     def __init__(self):
         self.grupo = "Humanos"
         self.imagen = "static/imagenes/humanos/escudo.png"
         self.descripcion = "escudo humanos"
 
-class EscudoOrcos(Escudo):
+class EscudoOrcos(Producto):
     def __init__(self):
         self.grupo = "Orcos"
         self.imagen = "static/imagenes/orcos/escudo.png"
@@ -41,14 +41,14 @@ class Montura(Producto):
         Producto.__init__(self)
 
 
-class MonturaOrcos(Montura):
+class MonturaOrcos(Producto):
     def __init__(self):
         self.grupo = "Orcos"
         self.imagen = "static/imagenes/orcos/montura.jpg"
         self.descripcion = "montura orcos"
 
 
-class MonturaHumanos(Montura):
+class MonturaHumanos(Producto):
     def __init__(self):
         self.grupo = "Humanos"
         self.imagen = "static/imagenes/humanos/montura.jpg"
